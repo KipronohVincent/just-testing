@@ -3,7 +3,7 @@
 
 ## Tasks :page_with_curl:
 
--For this assignment you will be implementing your own version of a Linked-List based Queue.
+- For this assignment you will be implementing your own version of a Linked-List based Queue.
 - Implement a Queue using a linked list. You will also need to implement the nodes that
 are part of your list.
 - Exhaustively test your implementation, your queue should be able to enqueue as many
