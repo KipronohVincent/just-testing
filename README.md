@@ -17,10 +17,28 @@ treated. Your program should run as long as the user does not choose to exit.
 - Add a read me file to your project folder.
 
 ## My solution
-- In this code, I used the `queue` class from the Standard Template to implement a queue of patients waiting at a clinic. The main function prompts the user to choose one of the operations (add a patient, see next patient, remove patient, or exit) and calls the appropriate function. The `addPatient` function prompts the user for the name of the patient and adds it to the end of the queue. The `nextPatient` function prints the name of the next patient in the `queue`, and the `removePatient` function removes the front patient from the queue. The program runs until the user chooses to exit.
+- The code defines two classes: `Node` and `Queue`.
 
-- Execute using this commands 
-`g++ queue.cpp -o queue`
-`./queue`
-`g++ patient.cpp -o patient`
+- The `Node` class has three member variables:
+
+    - `data` of type `int`: the data stored in the node.
+    - `next` of type `Node*`: a pointer to the next node in the queue.
+    - A constructor that takes an integer value as input and initializes the data variable with this value and next variable with nullptr.
+The `Queue` class has the following member variables:
+
+- `head` of type `Node*`: a pointer to the head of the queue.
+- `tail` of type `Node*`: a pointer to the tail of the queue.
+The `Queue` class has the following member functions:
+
+- A constructor that initializes the `head` and `tail` variables with `nullptr`.
+A destructor that frees up the memory occupied by the nodes in the queue.
+`enqueue(int data)`: a function that adds a node to the end of the queue.
+`dequeue()`: a function that removes a node from the front of the queue and returns its value.
+`front()`: a function that returns the value of the node at the front of the queue.
+
+## clinic check-in software.
+- I used the `queue` class from the `Standard Template` to implement a queue of patients waiting at a clinic. The main function prompts the user to choose one of the operations (add a patient, see next patient, remove patient, or exit) and calls the appropriate function. The `addPatient` function prompts the user for the name of the patient and adds it to the end of the queue. The `nextPatient` function prints the name of the next patient in the `queue`, and the `removePatient` function removes the front patient from the queue. The program runs until the user chooses to exit.
+
+- Execution 
+`g++ linke-list_queue.cpp -o linke-list_queue`
 `./patient`
