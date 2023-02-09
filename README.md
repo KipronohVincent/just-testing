@@ -41,4 +41,4 @@ A destructor that frees up the memory occupied by the nodes in the queue.
 
 - Execution 
 `g++ linke-list_queue.cpp -o linke-list_queue`
-`./patient`
+`./linke-list_queue`
